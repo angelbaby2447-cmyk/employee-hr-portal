@@ -1,0 +1,616 @@
+{
+  "users": [
+    {
+      "id": "USR-ADMIN-01",
+      "name": "Administrator",
+      "email": "admin@hrportal.com",
+      "passwordHash": "dccdb4e652fbf79fa9f09f82a88a79c30b86cd627d054c4ca0c5bc582d0de1168c36514a196857765e50cdeff3ef4e92e8ef02054a9cb4a5558270f92c2e47c4",
+      "salt": "2edaa8a06a224fdca906db55148f9ac1",
+      "role": "admin",
+      "createdAt": "2024-01-01"
+    },
+    {
+      "id": "USR-ADMIN-4016",
+      "name": "Angel Baby",
+      "email": "angelbaby@depaul.edu.in",
+      "passwordHash": "beb3f529a86a59f07cb77ac8311b428bdaf7aec2e239db81bf915ef585ad1279fa02c38c3287f654e68b96758ac7805bb1a4050f95bfc4d92530415276531c5d",
+      "salt": "c615a03da33059726ba91af86142363f",
+      "role": "admin",
+      "createdAt": "2026-10-29"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "025f20ba98d564e86570c53c62be8afd8090a9a87d4fbef6ca375c5f1215cda3",
+      "userId": "USR-ADMIN-01",
+      "expiresAt": 1793856784518
+    },
+    {
+      "token": "3e1409df6639852ebc88ca28519763a90781d24865d1ef4c7fde87ba55127d4e",
+      "userId": "USR-ADMIN-01",
+      "expiresAt": 1793856813279
+    },
+    {
+      "token": "71256224c487d43ba9c6ad0ef56e704f629624789ae424ed1f8796e709e0da78",
+      "userId": "USR-ADMIN-01",
+      "expiresAt": 1793857459826
+    },
+    {
+      "token": "376905fd030442576f15808390dd774a5fcb9cb8885e58763fae2a9aaf8ae2ba",
+      "userId": "USR-ADMIN-4016",
+      "expiresAt": 1793858154018
+    },
+    {
+      "token": "f0b58bf2d231cf14b2c8dbb45d61426c00afdf778e07dda8da4453723f052ea5",
+      "userId": "USR-ADMIN-4016",
+      "expiresAt": 1793858158452
+    }
+  ],
+  "departments": [
+    {
+      "id": "DEP-01",
+      "name": "Engineering",
+      "code": "ENG",
+      "managerId": "EMP-1001",
+      "managerName": "Sarah Jenkins",
+      "budget": 850000,
+      "location": "Building A, Floor 4",
+      "description": "Core software engineering, cloud architecture, and infrastructure security.",
+      "createdAt": "2024-01-15"
+    },
+    {
+      "id": "DEP-02",
+      "name": "Product & Design",
+      "code": "PRD",
+      "managerId": "EMP-1003",
+      "managerName": "Marcus Vance",
+      "budget": 420000,
+      "location": "Building A, Floor 3",
+      "description": "Product lifecycle strategy, user experience research, and design systems.",
+      "createdAt": "2024-01-15"
+    },
+    {
+      "id": "DEP-03",
+      "name": "Human Resources",
+      "code": "HR",
+      "managerId": "EMP-1002",
+      "managerName": "Elena Rostova",
+      "budget": 310000,
+      "location": "Building B, Floor 2",
+      "description": "Talent acquisition, employee wellness, compliance, and organizational culture.",
+      "createdAt": "2024-01-15"
+    },
+    {
+      "id": "DEP-04",
+      "name": "Sales & Marketing",
+      "code": "MKT",
+      "managerId": "EMP-1005",
+      "managerName": "David Kalu",
+      "budget": 680000,
+      "location": "Building B, Floor 1",
+      "description": "B2B enterprise account executives, brand management, and inbound demand generation.",
+      "createdAt": "2024-02-01"
+    },
+    {
+      "id": "DEP-05",
+      "name": "Finance & Operations",
+      "code": "FIN",
+      "managerId": "EMP-1007",
+      "managerName": "Victoria Chen",
+      "budget": 490000,
+      "location": "Building A, Floor 2",
+      "description": "Financial forecasting, treasury, accounts payable, and procurement oversight.",
+      "createdAt": "2024-02-15"
+    },
+    {
+      "id": "DEP-06",
+      "name": "Customer Support",
+      "code": "SUP",
+      "managerId": "EMP-1009",
+      "managerName": "Liam O’Connor",
+      "budget": 275000,
+      "location": "Building B, Floor 3",
+      "description": "Tier-1 to Tier-3 client technical support, SLA tracking, and resolution management.",
+      "createdAt": "2024-03-01"
+    }
+  ],
+  "employees": [
+    {
+      "id": "EMP-1001",
+      "firstName": "Sarah",
+      "lastName": "Jenkins",
+      "email": "s.jenkins@portal.org",
+      "phone": "+1 (555) 234-5671",
+      "departmentId": "DEP-01",
+      "departmentName": "Engineering",
+      "role": "VP of Engineering",
+      "salary": 165000,
+      "joinDate": "2023-03-15",
+      "status": "Active",
+      "avatarBg": "#2563eb",
+      "emergencyContact": {
+        "name": "Robert Jenkins",
+        "relationship": "Spouse",
+        "phone": "+1 (555) 234-9988"
+      },
+      "address": "742 Evergreen Terr, Springfield, OR"
+    },
+    {
+      "id": "EMP-1002",
+      "firstName": "Elena",
+      "lastName": "Rostova",
+      "email": "e.rostova@portal.org",
+      "phone": "+1 (555) 345-6782",
+      "departmentId": "DEP-03",
+      "departmentName": "Human Resources",
+      "role": "HR Director",
+      "salary": 130000,
+      "joinDate": "2023-04-01",
+      "status": "Active",
+      "avatarBg": "#059669",
+      "emergencyContact": {
+        "name": "Mikhail Rostov",
+        "relationship": "Brother",
+        "phone": "+1 (555) 345-0012"
+      },
+      "address": "128 Pinecrest Ave, Seattle, WA"
+    },
+    {
+      "id": "EMP-1003",
+      "firstName": "Marcus",
+      "lastName": "Vance",
+      "email": "m.vance@portal.org",
+      "phone": "+1 (555) 456-7893",
+      "departmentId": "DEP-02",
+      "departmentName": "Product & Design",
+      "role": "Head of Product",
+      "salary": 145000,
+      "joinDate": "2023-05-10",
+      "status": "Active",
+      "avatarBg": "#7c3aed",
+      "emergencyContact": {
+        "name": "Clara Vance",
+        "relationship": "Partner",
+        "phone": "+1 (555) 456-1123"
+      },
+      "address": "450 Bayview Blvd, San Francisco, CA"
+    },
+    {
+      "id": "EMP-1004",
+      "firstName": "Amina",
+      "lastName": "Diallo",
+      "email": "a.diallo@portal.org",
+      "phone": "+1 (555) 567-8904",
+      "departmentId": "DEP-01",
+      "departmentName": "Engineering",
+      "role": "Staff Cloud Architect",
+      "salary": 152000,
+      "joinDate": "2023-06-20",
+      "status": "Active",
+      "avatarBg": "#0891b2",
+      "emergencyContact": {
+        "name": "Ousmane Diallo",
+        "relationship": "Father",
+        "phone": "+1 (555) 567-4490"
+      },
+      "address": "89 Beacon St, Boston, MA"
+    },
+    {
+      "id": "EMP-1005",
+      "firstName": "David",
+      "lastName": "Kalu",
+      "email": "d.kalu@portal.org",
+      "phone": "+1 (555) 678-9015",
+      "departmentId": "DEP-04",
+      "departmentName": "Sales & Marketing",
+      "role": "VP of Global Sales",
+      "salary": 155000,
+      "joinDate": "2023-08-01",
+      "status": "Active",
+      "avatarBg": "#d97706",
+      "emergencyContact": {
+        "name": "Grace Kalu",
+        "relationship": "Spouse",
+        "phone": "+1 (555) 678-3321"
+      },
+      "address": "320 Michigan Ave, Chicago, IL"
+    },
+    {
+      "id": "EMP-1006",
+      "firstName": "Chloe",
+      "lastName": "Dupont",
+      "email": "c.dupont@portal.org",
+      "phone": "+1 (555) 789-0126",
+      "departmentId": "DEP-02",
+      "departmentName": "Product & Design",
+      "role": "Lead UX Researcher",
+      "salary": 118000,
+      "joinDate": "2023-09-15",
+      "status": "On Leave",
+      "avatarBg": "#db2777",
+      "emergencyContact": {
+        "name": "Luc Dupont",
+        "relationship": "Father",
+        "phone": "+1 (555) 789-9944"
+      },
+      "address": "512 Austin Way, Austin, TX"
+    },
+    {
+      "id": "EMP-1007",
+      "firstName": "Victoria",
+      "lastName": "Chen",
+      "email": "v.chen@portal.org",
+      "phone": "+1 (555) 890-1237",
+      "departmentId": "DEP-05",
+      "departmentName": "Finance & Operations",
+      "role": "Chief Financial Officer",
+      "salary": 168000,
+      "joinDate": "2023-10-01",
+      "status": "Active",
+      "avatarBg": "#4f46e5",
+      "emergencyContact": {
+        "name": "Henry Chen",
+        "relationship": "Spouse",
+        "phone": "+1 (555) 890-7766"
+      },
+      "address": "90 Wall St, New York, NY"
+    },
+    {
+      "id": "EMP-1008",
+      "firstName": "Ethan",
+      "lastName": "Ramirez",
+      "email": "e.ramirez@portal.org",
+      "phone": "+1 (555) 901-2348",
+      "departmentId": "DEP-01",
+      "departmentName": "Engineering",
+      "role": "Senior Frontend Engineer",
+      "salary": 125000,
+      "joinDate": "2023-11-05",
+      "status": "Active",
+      "avatarBg": "#ea580c",
+      "emergencyContact": {
+        "name": "Sofia Ramirez",
+        "relationship": "Mother",
+        "phone": "+1 (555) 901-6655"
+      },
+      "address": "1410 Market St, Denver, CO"
+    },
+    {
+      "id": "EMP-1009",
+      "firstName": "Liam",
+      "lastName": "O’Connor",
+      "email": "l.oconnor@portal.org",
+      "phone": "+1 (555) 012-3459",
+      "departmentId": "DEP-06",
+      "departmentName": "Customer Support",
+      "role": "Support Operations Lead",
+      "salary": 95000,
+      "joinDate": "2024-01-08",
+      "status": "Active",
+      "avatarBg": "#0d9488",
+      "emergencyContact": {
+        "name": "Maeve O’Connor",
+        "relationship": "Sister",
+        "phone": "+1 (555) 012-1188"
+      },
+      "address": "67 Congress St, Portland, ME"
+    },
+    {
+      "id": "EMP-1010",
+      "firstName": "Maya",
+      "lastName": "Patel",
+      "email": "m.patel@portal.org",
+      "phone": "+1 (555) 123-4560",
+      "departmentId": "DEP-04",
+      "departmentName": "Sales & Marketing",
+      "role": "Senior Growth Strategist",
+      "salary": 110000,
+      "joinDate": "2024-02-14",
+      "status": "Active",
+      "avatarBg": "#e11d48",
+      "emergencyContact": {
+        "name": "Raj Patel",
+        "relationship": "Spouse",
+        "phone": "+1 (555) 123-9009"
+      },
+      "address": "88 Peachtreet St, Atlanta, GA"
+    },
+    {
+      "id": "EMP-1011",
+      "firstName": "Julian",
+      "lastName": "Holt",
+      "email": "j.holt@portal.org",
+      "phone": "+1 (555) 234-5670",
+      "departmentId": "DEP-05",
+      "departmentName": "Finance & Operations",
+      "role": "Senior Financial Analyst",
+      "salary": 104000,
+      "joinDate": "2024-03-01",
+      "status": "Active",
+      "avatarBg": "#64748b",
+      "emergencyContact": {
+        "name": "Diane Holt",
+        "relationship": "Mother",
+        "phone": "+1 (555) 234-8877"
+      },
+      "address": "22 Elm St, Columbus, OH"
+    },
+    {
+      "id": "EMP-1012",
+      "firstName": "Kaitlyn",
+      "lastName": "Brooks",
+      "email": "k.brooks@portal.org",
+      "phone": "+1 (555) 345-6789",
+      "departmentId": "DEP-03",
+      "departmentName": "Human Resources",
+      "role": "Talent Acquisition Partner",
+      "salary": 88000,
+      "joinDate": "2024-04-12",
+      "status": "Active",
+      "avatarBg": "#16a34a",
+      "emergencyContact": {
+        "name": "Samuel Brooks",
+        "relationship": "Father",
+        "phone": "+1 (555) 345-7766"
+      },
+      "address": "77 Franklin Way, Charlotte, NC"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "ATT-20261028-001",
+      "employeeId": "EMP-1001",
+      "employeeName": "Sarah Jenkins",
+      "date": "2026-10-28",
+      "status": "Present",
+      "checkInTime": "08:52 AM",
+      "checkOutTime": "—",
+      "notes": "On-site: Architecture review"
+    },
+    {
+      "id": "ATT-20261028-002",
+      "employeeId": "EMP-1002",
+      "employeeName": "Elena Rostova",
+      "date": "2026-10-28",
+      "status": "Present",
+      "checkInTime": "08:45 AM",
+      "checkOutTime": "—",
+      "notes": "On-site: Executive 1-on-1s"
+    },
+    {
+      "id": "ATT-20261028-003",
+      "employeeId": "EMP-1003",
+      "employeeName": "Marcus Vance",
+      "date": "2026-10-28",
+      "status": "Present",
+      "checkInTime": "09:05 AM",
+      "checkOutTime": "—",
+      "notes": "Remote: Product roadmap sync"
+    },
+    {
+      "id": "ATT-20261028-004",
+      "employeeId": "EMP-1004",
+      "employeeName": "Amina Diallo",
+      "date": "2026-10-28",
+      "status": "Late",
+      "checkInTime": "09:42 AM",
+      "checkOutTime": "—",
+      "notes": "Transit delay on Green Line"
+    },
+    {
+      "id": "ATT-20261028-005",
+      "employeeId": "EMP-1005",
+      "employeeName": "David Kalu",
+      "date": "2026-10-28",
+      "status": "Present",
+      "checkInTime": "08:30 AM",
+      "checkOutTime": "—",
+      "notes": "Customer presentation in Boardroom B"
+    },
+    {
+      "id": "ATT-20261028-006",
+      "employeeId": "EMP-1006",
+      "employeeName": "Chloe Dupont",
+      "date": "2026-10-28",
+      "status": "Leave",
+      "checkInTime": "—",
+      "checkOutTime": "—",
+      "notes": "Approved Annual Leave"
+    },
+    {
+      "id": "ATT-20261028-007",
+      "employeeId": "EMP-1007",
+      "employeeName": "Victoria Chen",
+      "date": "2026-10-28",
+      "status": "Present",
+      "checkInTime": "08:50 AM",
+      "checkOutTime": "—",
+      "notes": "Q4 Audit preparations"
+    },
+    {
+      "id": "ATT-20261028-008",
+      "employeeId": "EMP-1008",
+      "employeeName": "Ethan Ramirez",
+      "date": "2026-10-28",
+      "status": "Present",
+      "checkInTime": "08:58 AM",
+      "checkOutTime": "—",
+      "notes": "Core frontend sprint tasks"
+    },
+    {
+      "id": "ATT-20261028-009",
+      "employeeId": "EMP-1009",
+      "employeeName": "Liam O’Connor",
+      "date": "2026-10-28",
+      "status": "Present",
+      "checkInTime": "08:40 AM",
+      "checkOutTime": "—",
+      "notes": "Managing morning shift escalation queue"
+    },
+    {
+      "id": "ATT-20261028-010",
+      "employeeId": "EMP-1010",
+      "employeeName": "Maya Patel",
+      "date": "2026-10-28",
+      "status": "Absent",
+      "checkInTime": "—",
+      "checkOutTime": "—",
+      "notes": "Unplanned absence - notified HR"
+    },
+    {
+      "id": "ATT-20261028-011",
+      "employeeId": "EMP-1011",
+      "employeeName": "Julian Holt",
+      "date": "2026-10-28",
+      "status": "Present",
+      "checkInTime": "09:00 AM",
+      "checkOutTime": "—",
+      "notes": "On-site: Budget ledger reconciliation"
+    },
+    {
+      "id": "ATT-20261028-012",
+      "employeeId": "EMP-1012",
+      "employeeName": "Kaitlyn Brooks",
+      "date": "2026-10-28",
+      "status": "Present",
+      "checkInTime": "08:48 AM",
+      "checkOutTime": "—",
+      "notes": "Conducting candidate technical interviews"
+    },
+    {
+      "id": "ATT-20261027-001",
+      "employeeId": "EMP-1001",
+      "employeeName": "Sarah Jenkins",
+      "date": "2026-10-27",
+      "status": "Present",
+      "checkInTime": "08:55 AM",
+      "checkOutTime": "05:30 PM",
+      "notes": "Full day"
+    },
+    {
+      "id": "ATT-20261027-002",
+      "employeeId": "EMP-1002",
+      "employeeName": "Elena Rostova",
+      "date": "2026-10-27",
+      "status": "Present",
+      "checkInTime": "08:45 AM",
+      "checkOutTime": "05:15 PM",
+      "notes": "Full day"
+    },
+    {
+      "id": "ATT-20261027-006",
+      "employeeId": "EMP-1006",
+      "employeeName": "Chloe Dupont",
+      "date": "2026-10-27",
+      "status": "Leave",
+      "checkInTime": "—",
+      "checkOutTime": "—",
+      "notes": "Approved Annual Leave"
+    }
+  ],
+  "leaves": [
+    {
+      "id": "LR-101",
+      "employeeId": "EMP-1006",
+      "employeeName": "Chloe Dupont",
+      "departmentName": "Product & Design",
+      "leaveType": "Annual",
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-31",
+      "days": 5,
+      "reason": "Scheduled autumn family vacation.",
+      "status": "Approved",
+      "appliedAt": "2026-10-14 10:20",
+      "reviewedBy": "Elena Rostova (HR)",
+      "reviewedAt": "2026-10-15 09:30",
+      "reviewNote": "Approved. Handover documentation confirmed."
+    },
+    {
+      "id": "LR-102",
+      "employeeId": "EMP-1008",
+      "employeeName": "Ethan Ramirez",
+      "departmentName": "Engineering",
+      "leaveType": "Sick",
+      "startDate": "2026-11-02",
+      "endDate": "2026-11-03",
+      "days": 2,
+      "reason": "Scheduled dental oral surgery and medical recovery.",
+      "status": "Pending",
+      "appliedAt": "2026-10-28 08:15"
+    },
+    {
+      "id": "LR-103",
+      "employeeId": "EMP-1010",
+      "employeeName": "Maya Patel",
+      "departmentName": "Sales & Marketing",
+      "leaveType": "Casual",
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-06",
+      "days": 1,
+      "reason": "Attending sibling university graduation ceremony.",
+      "status": "Pending",
+      "appliedAt": "2026-10-27 16:45"
+    },
+    {
+      "id": "LR-104",
+      "employeeId": "EMP-1004",
+      "employeeName": "Amina Diallo",
+      "departmentName": "Engineering",
+      "leaveType": "Annual",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-27",
+      "days": 5,
+      "reason": "Thanksgiving holiday travel to visit relatives.",
+      "status": "Pending",
+      "appliedAt": "2026-10-26 14:10"
+    },
+    {
+      "id": "LR-105",
+      "employeeId": "EMP-1011",
+      "employeeName": "Julian Holt",
+      "departmentName": "Finance & Operations",
+      "leaveType": "Sick",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-11",
+      "days": 2,
+      "reason": "Acute seasonal flu and doctor ordered rest.",
+      "status": "Approved",
+      "appliedAt": "2026-10-09 18:00",
+      "reviewedBy": "Elena Rostova (HR)",
+      "reviewedAt": "2026-10-10 08:00",
+      "reviewNote": "Approved medical leave with certificate."
+    },
+    {
+      "id": "LR-106",
+      "employeeId": "EMP-1009",
+      "employeeName": "Liam O’Connor",
+      "departmentName": "Customer Support",
+      "leaveType": "Casual",
+      "startDate": "2026-09-18",
+      "endDate": "2026-09-19",
+      "days": 2,
+      "reason": "Personal urgent real estate relocation.",
+      "status": "Rejected",
+      "appliedAt": "2026-09-15 11:30",
+      "reviewedBy": "Elena Rostova (HR)",
+      "reviewedAt": "2026-09-16 14:20",
+      "reviewNote": "Conflict with major customer onboarding shift schedule."
+    }
+  ],
+  "settings": {
+    "companyName": "Acme Enterprise Technologies",
+    "hrEmail": "hr@acmetech.com",
+    "currency": "USD ($)",
+    "workingHoursStart": "09:00",
+    "workingHoursEnd": "17:00",
+    "workingDays": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "leaveAnnualAllowance": 24,
+    "timezone": "America/Los_Angeles"
+  }
+}

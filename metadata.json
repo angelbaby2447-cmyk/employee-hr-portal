@@ -1,0 +1,6 @@
+{
+  "name": "Employee HR Portal",
+  "description": "Comprehensive Human Resources management portal with employee directory, attendance tracking, department management, leave approvals, and analytical reporting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
